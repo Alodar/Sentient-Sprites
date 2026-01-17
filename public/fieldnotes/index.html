@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fieldnotes — The Ada Memory Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Self-Injection: only run once per session
+    if (!window.__FIELDNOTES_LOADED__) {
+      window.__FIELDNOTES_LOADED__ = true;
+      document.addEventListener("DOMContentLoaded", () => {
+        // Load the Fieldnotes script
+        const s = document.createElement("script");
+        s.src = "js/fieldnotes.js";
+        document.body.appendChild(s);
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="fieldnotes-root">
+    <!-- The ritual steps will be injected here by fieldnotes.js -->
+    <noscript>
+      Please enable JavaScript to begin your Fieldnotes ritual.
+    </noscript>
+  </div>
+</body>
+</html>
